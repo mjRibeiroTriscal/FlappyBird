@@ -13,7 +13,7 @@ class Character {
 }
   
 window.addEventListener("load", () => {
-    
+
     //setTimeout( () => location.reload(), 60000)
 
     // Criação da table do jogo
@@ -32,7 +32,14 @@ window.addEventListener("load", () => {
     let elementTable = document.createElement('DIV')
     document.body.appendChild(elementTable)
     let attTable = document.createAttribute('style')
-    attTable.value = "width:"+table.width+"px;height:"+table.height+"px;display:flex;justify-content:center;align-items:center;border:5px solid "+table.color+";background-color:transparent;"
+    attTable.value = `
+                    width:${table.width}px;
+                    height:${table.height}px;
+                    display:flex;justify-content:center;
+                    align-items:center;
+                    border:5px solid ${table.color};
+                    background-color:transparent;
+                    `
     elementTable.setAttributeNode(attTable)
     let attTableId = document.createAttribute('id')
     attTableId.value = "table"
@@ -50,7 +57,11 @@ window.addEventListener("load", () => {
     let elementCharacter = document.createElement('DIV')
     document.getElementById("table").appendChild(elementCharacter)
     let attCharacter = document.createAttribute('style')
-    attCharacter.value = "width:20px;height:20px;background-color:"+character.color+";"
+    attCharacter.value = `
+                        width:20px;
+                        height:20px;
+                        background-color:${character.color};
+                        `
     elementCharacter.setAttributeNode(attCharacter)
     let attCharacterId = document.createAttribute('id')
     attCharacterId.value = "character"
