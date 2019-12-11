@@ -13,6 +13,7 @@ class Character {
 }
   
 window.addEventListener("load", () => {
+    
     //setTimeout( () => location.reload(), 60000)
 
     // Criação da table do jogo
@@ -54,4 +55,5 @@ window.addEventListener("load", () => {
     let attCharacterId = document.createAttribute('id')
     attCharacterId.value = "character"
     elementCharacter.setAttributeNode(attCharacterId)
+
 })
