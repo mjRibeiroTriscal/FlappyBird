@@ -4,7 +4,7 @@ class Table {
         this.height = height;
         this.color = color;
     }
-}
+} 
 
 class Character {
     constructor(color){
